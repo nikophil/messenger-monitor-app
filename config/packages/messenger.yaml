@@ -1,0 +1,27 @@
+framework:
+    messenger:
+        failure_transport: failed
+        transports:
+            amqp:
+                dsn: '%env(resolve:MESSENGER_TRANSPORT_AMQP_DSN)%'
+                retry_strategy:
+                    max_retries: 0
+            doctrine:
+                dsn: '%env(resolve:MESSENGER_TRANSPORT_DOCTRINE_DSN)%'
+                retry_strategy:
+                    max_retries: 0
+            redis:
+                dsn: '%env(resolve:MESSENGER_TRANSPORT_REDIS_DSN)%'
+                retry_strategy:
+                    max_retries: 0
+            in-memory:
+                dsn: '%env(resolve:MESSENGER_TRANSPORT_IN_MEMORY)%'
+                retry_strategy:
+                    max_retries: 0
+            failed: '%env(resolve:MESSENGER_TRANSPORT_FAILED)%'
+
+        routing:
+            'App\Message\AMQPMessage': amqp
+            'App\Message\DoctrineMessage': doctrine
+            'App\Message\RedisMessage': redis
+            'App\Message\InMemoryMessage': in-memory

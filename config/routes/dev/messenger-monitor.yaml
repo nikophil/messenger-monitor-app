@@ -1,0 +1,3 @@
+web_profiler_wdt:
+    resource: '@KaroIOMessengerMonitorBundle/Resources/config/routing.xml'
+    prefix: /messenger-monitor
