@@ -226,6 +226,9 @@
     "symfony/polyfill-php73": {
         "version": "v1.13.1"
     },
+    "symfony/polyfill-uuid": {
+        "version": "1.15-dev"
+    },
     "symfony/profiler-pack": {
         "version": "v1.0.4"
     },
@@ -310,6 +313,9 @@
     },
     "symfony/yaml": {
         "version": "v5.0.1"
+    },
+    "symfonycasts/messenger-monitor-bundle": {
+        "version": "dev-master"
     },
     "twig/twig": {
         "version": "v3.0.0"

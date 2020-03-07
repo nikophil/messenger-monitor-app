@@ -13,6 +13,6 @@ final class Controller
      */
     public function __invoke(UrlGeneratorInterface $urlGenerator)
     {
-        return new RedirectResponse($urlGenerator->generate('karo-io.dashboard'));
+        return new RedirectResponse($urlGenerator->generate('symfonycasts.messenger_monitor.dashboard'));
     }
 }

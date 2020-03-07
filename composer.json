@@ -1,12 +1,19 @@
 {
+    "minimum-stability": "dev",
     "type": "project",
     "license": "proprietary",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/symfonycasts/messenger-monitor-bundle"
+        }
+    ],
     "require": {
         "php": "^7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "ext-redis": "*",
-        "karo-io/messenger-monitor-bundle": "dev-master",
+        "symfonycasts/messenger-monitor-bundle": "master",
         "symfony/console": "5.0.*",
         "symfony/debug-pack": "^1.0",
         "symfony/dotenv": "5.0.*",
