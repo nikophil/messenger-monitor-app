@@ -2,7 +2,6 @@
 
 namespace App\MessageHandler;
 
-use App\Message\AMQPMessage;
 use App\Message\Message;
 use Symfony\Component\Messenger\Handler\MessageHandlerInterface;
 
